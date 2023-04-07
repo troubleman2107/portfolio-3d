@@ -7,7 +7,7 @@ const AnimationLefttoRight = ({ children, class_name }) => {
       initial={{ opacity: 0, x: 0 }}
       animate={{ opacity: 1, x: 40 }}
       transition={{
-        duration: 0.5,
+        duration: 1,
         ease: "easeInOut",
       }}
       className={class_name}

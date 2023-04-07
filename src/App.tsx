@@ -1,13 +1,14 @@
 import { BrowserRouter } from "react-router-dom";
 import Navbar from "./components/Navbar";
+import TypingText from "./components/TypingText";
+import { motion } from "framer-motion";
+import Home from "./pages/Home";
 
 const App = () => {
   return (
     <BrowserRouter>
-      <div className="relative z-0 bg-blue-800">
-        <div className="bg-cover bg-no-repeat bg-center">
-          <Navbar />
-        </div>
+      <div className="h-screen overflow-hidden flex items-center justify-center bg-slate-950 py-9 px-10">
+        <Home />
       </div>
     </BrowserRouter>
   );

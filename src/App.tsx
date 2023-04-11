@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar";
 import TypingText from "./components/TypingText";
 import { motion } from "framer-motion";
 import Home from "./pages/Home";
+import AnimationComponent from "./components/AnimationLefttoRight";
 
 const App = () => {
   return (

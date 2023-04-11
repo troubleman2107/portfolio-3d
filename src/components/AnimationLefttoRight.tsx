@@ -1,20 +1,40 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-const AnimationLefttoRight = ({ children, class_name }) => {
+type infoProps = {
+  initial: {
+    opacity: number;
+    x?: number;
+    y?: number;
+  };
+  animate: {
+    opacity: number;
+    x?: number;
+    y?: number;
+  };
+  duration: number;
+};
+
+type Types = {
+  children: any | string | JSX.Element | JSX.Element[];
+  class_name: String;
+  info: infoProps;
+};
+
+const AnimationComponent = ({ children, class_name, info }: Types) => {
   return (
     <motion.div
-      initial={{ opacity: 0, x: 0 }}
-      animate={{ opacity: 1, x: 40 }}
+      initial={info.initial}
+      animate={info.animate}
       transition={{
-        duration: 1,
+        duration: info.duration,
         ease: "easeInOut",
       }}
-      className={class_name}
+      className={class_name.toString()}
     >
       {children}
     </motion.div>
   );
 };
 
-export default AnimationLefttoRight;
+export default AnimationComponent;

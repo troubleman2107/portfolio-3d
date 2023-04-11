@@ -24,7 +24,7 @@ const TypingText = ({ text }) => {
   return (
     <div className="inline-block text-6xl mb-3">
       <span className="text-white font-bold">{displayedText}</span>
-      <span className="typing-cursor animate-pulse text-slate-300">_</span>
+      <span className="typing-cursor animate-pulse text-white">_</span>
     </div>
     // <motion.div
     //   initial={{ opacity: 0, x: -50 }}
@@ -35,7 +35,7 @@ const TypingText = ({ text }) => {
     //   }}
     //   className="inline-block text-6xl mb-3"
     // >
-    //   <span className="text-white font-bold">{displayedText}</span>
+    //   <span className="text-slate font-bold">{displayedText}</span>
     //   <span className="typing-cursor animate-pulse text-slate-300">_</span>
     // </motion.div>
   );

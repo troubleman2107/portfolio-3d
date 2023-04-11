@@ -7,6 +7,8 @@ import NodeLogo from "../assets/images/5968322.png";
 import ZbrushLogo from "../assets/images/zbrush-vector-logo.png";
 import BlenderLogo from "../assets/images/Blender_logo_no_text.svg.png";
 import MainBackground from "../assets/images/untitled3.png";
+import ArtstationLogo from "../assets/images/artstation-logo.png";
+import GithubLogo from "../assets/images/github-logo.png";
 import SubtancePainterLogo from "../assets/images/9814247.png";
 import { motion } from "framer-motion";
 
@@ -51,7 +53,7 @@ const Home = () => {
         }}
       >
         <div className="col-span-8 bg-slate-900 p-8 rounded-l-lg shadow-lg w-full h-full ">
-          <div className="grid grid-cols-10">
+          <div className="grid grid-cols-10 ">
             <div className="col-span-6">
               <AnimationComponent
                 class_name={""}
@@ -125,7 +127,26 @@ const Home = () => {
                 </div>
               </AnimationComponent>
             </div>
-            <div className="col-span-4"></div>
+            <div className="col-span-4">
+              <div className="">
+                <div className="flex justify-end items-center">
+                  <a href="https://github.com/troubleman2107" target="_blank">
+                    <img
+                      className="w-10 h-10 mx-2 object-cover"
+                      src={GithubLogo}
+                      alt="GithubLogo"
+                    />
+                  </a>
+                  <a href="https://www.artstation.com/thaibao" target="_blank">
+                    <img
+                      className="w-10 h-10 mx-2 object-cover"
+                      src={ArtstationLogo}
+                      alt="ArtstationLogo"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <div className="col-span-2 bg-gradient-to-r from-green-500 rounded-r-lg shadow-lg"></div>

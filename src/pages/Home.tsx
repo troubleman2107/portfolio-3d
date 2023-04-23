@@ -49,14 +49,14 @@ const Home = () => {
             opacity: 1,
             x: 0,
           },
-          duration: 1,
+          duration: 2,
         }}
       >
         <div className="col-span-8 bg-slate-900 p-8 rounded-l-lg shadow-lg w-full h-full ">
           <div className="grid grid-cols-10 ">
             <div className="col-span-6">
               <AnimationComponent
-                class_name={""}
+                class_name={"mb-8"}
                 info={{
                   initial: {
                     opacity: 0,
@@ -66,7 +66,7 @@ const Home = () => {
                     opacity: 1,
                     y: 0,
                   },
-                  duration: 2.5,
+                  duration: 3,
                 }}
               >
                 <TypingText text="NGUYEN THAI BAO" />
@@ -126,6 +126,13 @@ const Home = () => {
                   </div>
                 </div>
               </AnimationComponent>
+              <a
+                href="https://www.google.com/"
+                target="_blank"
+                className="rounded-md p-5 bg-white duration-700 hover:bg-slate-300 mt-6 font-medium"
+              >
+                Download Resume
+              </a>
             </div>
             <div className="col-span-4">
               <div className="">

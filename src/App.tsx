@@ -8,7 +8,7 @@ import AnimationComponent from "./components/AnimationLefttoRight";
 const App = () => {
   return (
     <BrowserRouter>
-      <div className="h-screen overflow-hidden flex items-center justify-center bg-slate-950 py-9 px-10">
+      <div className="min-h-screen w-screen overflow-hidden flex items-center justify-center bg-slate-950 py-9 px-10">
         <Home />
       </div>
     </BrowserRouter>
